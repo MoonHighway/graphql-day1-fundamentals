@@ -1,0 +1,23 @@
+{
+  "name": "snowtooth-ui",
+  "version": "2.0.0",
+  "description": "A React lift-status UI for the Snowtooth API — Apollo Client 4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@apollo/client": "^4.0.0",
+    "graphql": "^16.11.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^6.0.0"
+  }
+}

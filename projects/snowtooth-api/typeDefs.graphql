@@ -1,0 +1,70 @@
+"""
+A valid datetime value, serialized as an ISO string.
+"""
+scalar DateTime
+
+"""
+A chairlift or gondola that carries skiers up Snowtooth Mountain.
+"""
+type Lift {
+  id: ID!
+  name: String!
+  status: LiftStatus!
+  capacity: Int!
+  night: Boolean!
+  elevationGain: Int!
+  "Every trail that you can ski off of this lift."
+  trailAccess: [Trail!]!
+}
+
+"""
+A ski run at Snowtooth Mountain.
+"""
+type Trail {
+  id: ID!
+  name: String!
+  status: TrailStatus
+  difficulty: Difficulty!
+  groomed: Boolean!
+  trees: Boolean!
+  night: Boolean!
+  "Every lift that gets you to this trail."
+  accessedByLifts: [Lift!]!
+}
+
+enum LiftStatus {
+  OPEN
+  HOLD
+  CLOSED
+}
+
+enum TrailStatus {
+  OPEN
+  CLOSED
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+  EXPERT
+}
+
+type SetLiftStatusPayload {
+  lift: Lift
+  changed: DateTime
+}
+
+type Query {
+  allLifts(status: LiftStatus): [Lift!]!
+  findLiftById(id: ID!): Lift!
+  liftCount(status: LiftStatus): Int!
+  allTrails(status: TrailStatus): [Trail!]!
+  findTrailByName(name: String!): Trail!
+  trailCount(status: TrailStatus): Int!
+}
+
+type Mutation {
+  setLiftStatus(id: ID!, status: LiftStatus!): SetLiftStatusPayload!
+  setTrailStatus(id: ID!, status: TrailStatus!): Trail!
+}

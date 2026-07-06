@@ -1,0 +1,8 @@
+# Pet Library Schema
+#
+# Design the schema for the Pet Library here.
+# See README.md for the requirements.
+
+type Query {
+  totalPets: Int!
+}
