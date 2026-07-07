@@ -36,7 +36,7 @@ Query: {
 
 ## Trivial resolvers & field-level resolvers
 
-If a field isn't in your resolver map, GraphQL just reads the property off `parent` (a *trivial resolver*). When the data shape doesn't match the schema, add a field resolver — our JSON stores `"difficulty": "expert"` but the schema exposes an enum:
+If a field isn't in your resolver map, GraphQL just reads the property off `parent` (a *trivial resolver*). When the data shape doesn't match the schema, add a field resolver - our JSON stores `"difficulty": "expert"` but the schema exposes an enum:
 
 ```js
 Trail: {
@@ -46,7 +46,7 @@ Trail: {
 }
 ```
 
-This is also how types connect: `Lift.trailAccess` and `Trail.accessedByLifts` each resolve the relationship lazily — only when queried.
+This is also how types connect: `Lift.trailAccess` and `Trail.accessedByLifts` each resolve the relationship lazily - only when queried.
 
 ## Context: where your data sources live
 
@@ -67,7 +67,7 @@ On Day 2 we'll use exactly this hook for **authorization**.
 
 ## Building mutations
 
-Mutations are just resolvers on the `Mutation` type — take args, change data, return the payload:
+Mutations are just resolvers on the `Mutation` type - take args, change data, return the payload:
 
 ```js
 Mutation: {
@@ -96,7 +96,7 @@ DateTime: new GraphQLScalarType({
 
 ## Wrapping REST APIs
 
-Resolvers can fetch from anywhere — including your existing REST services:
+Resolvers can fetch from anywhere - including your existing REST services:
 
 ```js
 Query: {
@@ -117,6 +117,6 @@ cd projects/pokemon-rest-wrapper
 npm install && npm start   # → http://localhost:4001
 ```
 
-This is the classic incremental-adoption pattern: put a typed graph in front of REST services without rewriting them. (In production you'd add per-request caching/batching — look at [DataLoader](https://github.com/graphql/dataloader) and [`@apollo/datasource-rest`](https://www.apollographql.com/docs/apollo-server/data/fetching-rest).)
+This is the classic incremental-adoption pattern: put a typed graph in front of REST services without rewriting them. (In production you'd add per-request caching/batching - look at [DataLoader](https://github.com/graphql/dataloader) and [`@apollo/datasource-rest`](https://www.apollographql.com/docs/apollo-server/data/fetching-rest).)
 
 ➡️ **Lab:** [Lab 03 · Extend the Snowtooth API](../labs/03-api-lab.md)

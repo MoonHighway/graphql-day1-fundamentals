@@ -1,7 +1,7 @@
 {
   "name": "snowtooth-api",
   "version": "2.0.0",
-  "description": "A GraphQL API for a fake ski resort — built with Apollo Server 5",
+  "description": "A GraphQL API for a fake ski resort - built with Apollo Server 5",
   "type": "module",
   "main": "index.js",
   "scripts": {

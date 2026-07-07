@@ -2,7 +2,7 @@
 
 > 🏔 [https://snowtooth.moonhighway.com](https://snowtooth.moonhighway.com) · browser only
 
-You're working the morning shift at Snowtooth Mountain's operations desk. Use the query language to answer these — **write each one as a query, don't count by hand.**
+You're working the morning shift at Snowtooth Mountain's operations desk. Use the query language to answer these - **write each one as a query, don't count by hand.**
 
 ## Part 1 · Queries
 
@@ -10,7 +10,7 @@ You're working the morning shift at Snowtooth Mountain's operations desk. Use th
 2. How many trails are currently `OPEN`?
 3. Write **one query** that returns both numbers, using aliases so the JSON keys are `openLifts` and `openTrails`.
 4. List the name and status of every lift, plus the names of the trails you can access from each.
-5. Find the lift called `"Jazz Cat"` — what trails does it access, and how difficult are they?
+5. Find the lift called `"Jazz Cat"` - what trails does it access, and how difficult are they?
 
 ## Part 2 · Operation names & variables
 
@@ -28,5 +28,5 @@ You're working the morning shift at Snowtooth Mountain's operations desk. Use th
 
 ## Stretch
 
-- Break something on purpose: misspell a field, omit a required argument, pass a bad enum value. Read each error carefully — where did validation catch it?
+- Break something on purpose: misspell a field, omit a required argument, pass a bad enum value. Read each error carefully - where did validation catch it?
 - Explore the schema tab. How did the docs get there?

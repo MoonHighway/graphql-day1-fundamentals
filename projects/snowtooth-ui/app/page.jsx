@@ -1,3 +1,5 @@
+"use client";
+
 import { gql } from "@apollo/client";
 import { useQuery, useMutation } from "@apollo/client/react";
 
@@ -44,14 +46,14 @@ function StatusPicker({ lift }) {
   );
 }
 
-export default function App() {
+export default function Home() {
   const { loading, error, data } = useQuery(ALL_LIFTS);
 
   if (loading) return <p className="notice">Loading lifts…</p>;
   if (error)
     return (
       <p className="notice">
-        Error: {error.message} — is the Snowtooth API running on port 4000?
+        Error: {error.message}. Is the Snowtooth API running on port 4000?
       </p>
     );
 
@@ -72,7 +74,7 @@ export default function App() {
             <tr key={lift.id}>
               <td>{lift.name}</td>
               <td>{lift.capacity}</td>
-              <td>{lift.night ? "🌙" : "—"}</td>
+              <td>{lift.night ? "🌙" : "-"}</td>
               <td>
                 <StatusPicker lift={lift} />
               </td>
@@ -82,7 +84,7 @@ export default function App() {
       </table>
       <p className="hint">
         Click a status to send a mutation. Notice the row updates without a
-        refetch — Apollo Client normalizes each lift by <code>id</code> in its
+        refetch: Apollo Client normalizes each lift by <code>id</code> in its
         cache.
       </p>
     </main>

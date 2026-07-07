@@ -2,7 +2,7 @@
 
 > 📁 [`projects/snowtooth-api`](../projects/snowtooth-api) · have `npm run dev` running (auto-restarts on save)
 
-Ship three tickets against the Snowtooth API. Each one touches the schema **and** the resolvers — that's the rhythm of real GraphQL work.
+Ship three tickets against the Snowtooth API. Each one touches the schema **and** the resolvers - that's the rhythm of real GraphQL work.
 
 ## Ticket 1 · Trail counts by difficulty
 
@@ -44,4 +44,4 @@ Add a `weather` field to `Query` that calls a real REST endpoint, e.g. Open-Mete
 https://api.open-meteo.com/v1/forecast?latitude=39.6&longitude=-120.2&current_weather=true
 ```
 
-Design a small `Weather` type — expose only what skiers care about. (See [`projects/pokemon-rest-wrapper`](../projects/pokemon-rest-wrapper) for the pattern.)
+Design a small `Weather` type - expose only what skiers care about. (See [`projects/pokemon-rest-wrapper`](../projects/pokemon-rest-wrapper) for the pattern.)

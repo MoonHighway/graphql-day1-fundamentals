@@ -13,7 +13,7 @@ curl -X POST \
      http://localhost:4000
 ```
 
-Or with `fetch` — this works anywhere JavaScript runs:
+Or with `fetch` - this works anywhere JavaScript runs:
 
 ```js
 const res = await fetch("http://localhost:4000", {

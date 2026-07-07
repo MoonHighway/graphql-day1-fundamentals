@@ -1,6 +1,6 @@
 # 03 · Effective Schema Design
 
-> ⏱️ ~60 min · SDL only — [Apollo Sandbox](https://studio.apollographql.com/sandbox) or your editor
+> ⏱️ ~60 min · SDL only - [Apollo Sandbox](https://studio.apollographql.com/sandbox) or your editor
 
 The **Schema Definition Language (SDL)** is how we write the contract. Good schemas describe your *domain*, not your database tables.
 
@@ -29,9 +29,9 @@ Built-in scalars: `ID`, `String`, `Int`, `Float`, `Boolean`. Enums restrict a fi
 
 Every field is nullable by default; `!` makes it non-null.
 
-- `name: String!` — the server **guarantees** a value. If a resolver returns null here, the error propagates up to the nearest nullable parent.
+- `name: String!` - the server **guarantees** a value. If a resolver returns null here, the error propagates up to the nearest nullable parent.
 - Rule of thumb: be strict (`!`) where data truly always exists; stay nullable where a partial failure shouldn't take down the whole response.
-- **Non-null is a promise you can never take back** without a breaking change — nullable→non-null is safe, the reverse is not.
+- **Non-null is a promise you can never take back** without a breaking change - nullable→non-null is safe, the reverse is not.
 
 ## Connecting types
 
@@ -76,7 +76,7 @@ type Query {
 }
 ```
 
-For large or fast-moving lists, prefer cursor-based pagination (see the [Relay connection spec](https://relay.dev/graphql/connections.htm)) — it's the pattern most public graphs (GitHub!) use.
+For large or fast-moving lists, prefer cursor-based pagination (see the [Relay connection spec](https://relay.dev/graphql/connections.htm)) - it's the pattern most public graphs (GitHub!) use.
 
 ## Custom scalars
 

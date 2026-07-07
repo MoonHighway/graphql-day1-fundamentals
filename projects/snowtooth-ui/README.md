@@ -1,6 +1,6 @@
 # Snowtooth UI 🎿
 
-A lift-status board for Snowtooth Mountain built with **React 19 + Apollo Client 4** (Vite).
+A lift-status board for Snowtooth Mountain built with **Next.js + React 19 + Apollo Client 4**.
 
 ## Run it
 
@@ -14,10 +14,11 @@ A lift-status board for Snowtooth Mountain built with **React 19 + Apollo Client
 
    ```bash
    npm install
-   npm run dev                # → http://localhost:5173
+   npm run dev                # → http://localhost:3000
    ```
 
 ## What to look at
 
-- **`src/main.jsx`** — creating the `ApolloClient` (link + cache) and wrapping the app in `ApolloProvider`. Note the Apollo Client 4 import split: core from `@apollo/client`, React bits from `@apollo/client/react`.
-- **`src/App.jsx`** — `useQuery` for the lift list, `useMutation` for status changes. The mutation response includes `id` and `status`, so the normalized cache updates the row automatically — no refetch.
+- **`app/providers.jsx`** is a client component (`"use client"`) that creates the `ApolloClient` (link + cache) and wraps the app in `ApolloProvider`. Note the Apollo Client 4 import split: core from `@apollo/client`, React bits from `@apollo/client/react`.
+- **`app/layout.jsx`** is the root layout. It stays a server component and pulls in the providers.
+- **`app/page.jsx`** uses `useQuery` for the lift list and `useMutation` for status changes, so it is a client component too. The mutation response includes `id` and `status`, so the normalized cache updates the row automatically with no refetch.

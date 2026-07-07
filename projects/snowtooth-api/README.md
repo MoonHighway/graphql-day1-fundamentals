@@ -1,6 +1,6 @@
 # Snowtooth API ⛷️
 
-A GraphQL API for Snowtooth Mountain, a fake ski resort — built with **Apollo Server 5**.
+A GraphQL API for Snowtooth Mountain, a fake ski resort - built with **Apollo Server 5**.
 
 ## Run it
 
@@ -22,7 +22,7 @@ Open [http://localhost:4000](http://localhost:4000) in a browser to explore the 
 
 | File | What it is |
 |------|------------|
-| `typeDefs.graphql` | The schema — the contract for this API |
+| `typeDefs.graphql` | The schema - the contract for this API |
 | `index.js` | Apollo Server + resolvers + context |
 | `mocked.js` | The same schema served with mock data (no resolvers!) |
 | `data/lifts.json` · `data/trails.json` | Our "database" |

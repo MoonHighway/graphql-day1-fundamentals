@@ -1,6 +1,6 @@
 # 02 · The GraphQL Query Language
 
-> ⏱️ ~60 min · browser only — [Snowtooth Playground](https://snowtooth.moonhighway.com) · [Pet Library](https://pet-library.moonhighway.com)
+> ⏱️ ~60 min · browser only - [Snowtooth Playground](https://snowtooth.moonhighway.com) · [Pet Library](https://pet-library.moonhighway.com)
 
 Everything in this lesson happens in the browser with Apollo Explorer. No local setup.
 
@@ -33,7 +33,7 @@ query {
 
 ## Aliases
 
-Field names become JSON keys — rename them, or query the same field twice:
+Field names become JSON keys - rename them, or query the same field twice:
 
 ```graphql
 query {
@@ -66,7 +66,7 @@ query LiftStatusCheck($liftId: ID!) {
 { "liftId": "astra-express" }
 ```
 
-Nested selections (`trailAccess { ... }`) are where GraphQL shines: one request walks the relationship graph — no second round trip.
+Nested selections (`trailAccess { ... }`) are where GraphQL shines: one request walks the relationship graph - no second round trip.
 
 ## Mutations
 
@@ -81,7 +81,7 @@ mutation CloseLift {
 }
 ```
 
-You select fields on the result too — a mutation is also a query for what changed.
+You select fields on the result too - a mutation is also a query for what changed.
 
 ## Subscriptions
 
@@ -100,6 +100,6 @@ Run this in one Snowtooth tab, send a `setLiftStatus` mutation in another, and w
 
 ## Reading GraphQL errors
 
-Try misspelling a field. GraphQL validates every operation against the schema **before** running it — you get a specific error, not a 500. This is your first taste of why the schema-as-contract matters.
+Try misspelling a field. GraphQL validates every operation against the schema **before** running it - you get a specific error, not a 500. This is your first taste of why the schema-as-contract matters.
 
 ➡️ **Lab:** [Lab 01 · Snowtooth Query Lab](../labs/01-query-lab.md)

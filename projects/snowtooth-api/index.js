@@ -50,7 +50,7 @@ const resolvers = {
     accessedByLifts: (parent, args, { lifts }) =>
       parent.lift.map((id) => lifts.find((l) => id === l.id)),
     // The JSON data stores difficulty in lowercase ("expert"), but the
-    // schema exposes a Difficulty enum (EXPERT) — resolvers translate.
+    // schema exposes a Difficulty enum (EXPERT) - resolvers translate.
     difficulty: (parent) => parent.difficulty.toUpperCase()
   },
   DateTime: new GraphQLScalarType({

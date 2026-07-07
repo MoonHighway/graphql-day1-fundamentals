@@ -1,6 +1,6 @@
 // Wrapping a REST API with GraphQL
 //
-// GraphQL doesn't replace your existing services — resolvers can get
+// GraphQL doesn't replace your existing services - resolvers can get
 // data from anywhere: a database, another API, a file, memory.
 // Here every resolver calls the REST-based PokéAPI (https://pokeapi.co)
 // using Node's built-in fetch.
@@ -44,7 +44,7 @@ const resolvers = {
     }
   },
   Pokemon: {
-    // The REST response doesn't match our schema exactly —
+    // The REST response doesn't match our schema exactly -
     // field-level resolvers reshape it.
     types: (parent) => parent.types.map((t) => t.type.name),
     sprite: (parent) => parent.sprites?.front_default,

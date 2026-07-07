@@ -1,9 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+"use client";
+
 import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
-import App from "./App.jsx";
-import "./index.css";
 
 // Point this at your local Snowtooth API (projects/snowtooth-api).
 // It also works against the hosted playground:
@@ -13,8 +11,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>
-);
+export default function Providers({ children }) {
+  return <ApolloProvider client={client}>{children}</ApolloProvider>;
+}
