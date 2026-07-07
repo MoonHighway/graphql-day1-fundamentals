@@ -1,8 +1,3 @@
-<p align="center">
-<img src="https://commons.wikimedia.org/wiki/File:GraphQL_Logo.svg" width="100" alt="graphql logo"/>
-<img src="https://i.imgur.com/migo24P.png" width="100" alt="moon highway logo"/>
-</p>
-
 # Day 1 · GraphQL Fundamentals, APIs & Clients
 
 Welcome! We're really glad you're here. This repo holds everything for **Day 1**: lessons, labs, and runnable projects. Day 2 (federation, security & production readiness) lives in its own repo.
