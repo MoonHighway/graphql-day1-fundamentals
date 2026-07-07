@@ -1,5 +1,9 @@
-// Schema-first development: serve realistic fake data from nothing
-// but the schema. Frontend teams can start building immediately.
+// STARTING POINT: a mocked server. Schema-first development means we
+// can serve realistic fake data from nothing but the schema, and
+// frontend teams can start building immediately.
+//
+// In Lesson 05 you'll replace the mocks with real resolvers backed by
+// the JSON in ./data. The finished version lives in ../complete.
 //
 // Since Apollo Server 4, mocking lives in @graphql-tools rather than
 // being built in: https://www.apollographql.com/docs/apollo-server/testing/mocking

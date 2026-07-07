@@ -17,7 +17,7 @@ The morning is 100% browser-based - you need nothing installed. For the afternoo
 
 1. **Node 20+** (`node --version`) - Apollo Server 5 requires it
 2. **VS Code or IntelliJ** with a GraphQL extension (nice to have)
-3. Clone this repo. Each project in `projects/` installs independently with `npm install`.
+3. Clone this repo. Each project folder in `projects/` installs independently with `npm install` (for `snowtooth-api` and `snowtooth-ui`, run it inside `start/` or `complete/`).
 
 ## 🗺️ The day
 
@@ -41,10 +41,10 @@ The morning is 100% browser-based - you need nothing installed. For the afternoo
 
 | Project | What it is | Run |
 |---------|------------|-----|
-| [`projects/snowtooth-api`](./projects/snowtooth-api) | Ski resort GraphQL API - **Apollo Server 5** | `npm start` · `npm run mock` |
+| [`projects/snowtooth-api`](./projects/snowtooth-api) | Ski resort GraphQL API - **Apollo Server 5**. `start/` = mocked server, `complete/` = real resolvers | `npm start` (in `start/` or `complete/`) |
 | [`projects/pet-library-schema`](./projects/pet-library-schema) | Schema-design lab (SDL only) + complete solution | no server needed |
 | [`projects/pokemon-rest-wrapper`](./projects/pokemon-rest-wrapper) | GraphQL layer over the REST PokéAPI | `npm start` |
-| [`projects/snowtooth-ui`](./projects/snowtooth-ui) | **Next.js** + React 19 + **Apollo Client 4** lift-status board | `npm run dev` |
+| [`projects/snowtooth-ui`](./projects/snowtooth-ui) | **Next.js** + React 19 + **Apollo Client 4** lift-status board. `start/` = placeholder, `complete/` = finished app | `npm run dev` (in `start/` or `complete/`) |
 
 ## 🔗 Reference links
 

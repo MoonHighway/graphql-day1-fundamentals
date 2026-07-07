@@ -1,0 +1,22 @@
+{
+  "name": "snowtooth-api-start",
+  "version": "3.0.0",
+  "description": "Snowtooth API starting point - a mocked Apollo Server 5, ready for real resolvers",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "author": "Moon Highway",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "@graphql-tools/mock": "^9.0.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "graphql": "^16.11.0"
+  }
+}

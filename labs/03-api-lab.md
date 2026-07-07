@@ -1,6 +1,6 @@
 # Lab 03 · Extend the Snowtooth API
 
-> 📁 [`projects/snowtooth-api`](../projects/snowtooth-api) · have `npm run dev` running (auto-restarts on save)
+> 📁 Work in your [`projects/snowtooth-api/start`](../projects/snowtooth-api/start) from Lesson 05 (or copy [`complete`](../projects/snowtooth-api/complete) for a fresh baseline) · have `npm run dev` running (auto-restarts on save)
 
 Ship three tickets against the Snowtooth API. Each one touches the schema **and** the resolvers - that's the rhythm of real GraphQL work.
 

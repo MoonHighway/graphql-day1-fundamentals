@@ -1,6 +1,6 @@
 # Lab 04 · Add Trails to the UI
 
-> 📁 [`projects/snowtooth-ui`](../projects/snowtooth-ui) · API running on port 4000, UI on 3000
+> 📁 Work in your [`projects/snowtooth-ui/start`](../projects/snowtooth-ui/start) from Lesson 06 (finished board: [`complete`](../projects/snowtooth-ui/complete)) · API running on port 4000, UI on 3000
 
 The lift board works. Your ticket: give trails the same treatment.
 

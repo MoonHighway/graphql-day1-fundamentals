@@ -1,7 +1,7 @@
 {
-  "name": "snowtooth-ui",
+  "name": "snowtooth-ui-start",
   "version": "3.0.0",
-  "description": "A Next.js lift-status UI for the Snowtooth API, built with Apollo Client 4",
+  "description": "Snowtooth UI starting point - a Next.js placeholder, ready for Apollo Client 4",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -2,12 +2,12 @@
 
 > ⏱️ ~75 min · projects: [`projects/snowtooth-api`](../projects/snowtooth-api) · [`projects/pokemon-rest-wrapper`](../projects/pokemon-rest-wrapper)
 
-Run the full server:
+We pick up where Lesson 04 left off: `start/` is serving mocks, and now we replace them with real resolvers backed by the JSON in `start/data`. Keep working in `start/`; the finished server lives in `complete/` if you want to peek or compare:
 
 ```bash
-cd projects/snowtooth-api
+cd projects/snowtooth-api/start    # build here
 npm install
-npm start
+npm run dev                        # restarts on save
 ```
 
 ## Anatomy of a resolver

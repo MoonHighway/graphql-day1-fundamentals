@@ -1,6 +1,6 @@
 # 06 · GraphQL Clients & Apollo Client
 
-> ⏱️ ~75 min · project: [`projects/snowtooth-ui`](../projects/snowtooth-ui)
+> ⏱️ ~75 min · project: [`projects/snowtooth-ui/start`](../projects/snowtooth-ui/start)
 
 ## GraphQL is just HTTP
 
@@ -93,12 +93,14 @@ Everything above works in any React app. In Next.js App Router, use [`@apollo/cl
 
 ## Run the app
 
-```bash
-# terminal 1
-cd projects/snowtooth-api && npm start
+We build the whole board in `snowtooth-ui/start` (a Next.js placeholder with the styles ready); the finished app is in `snowtooth-ui/complete`:
 
-# terminal 2
-cd projects/snowtooth-ui && npm install && npm run dev
+```bash
+# terminal 1 - the API (use complete, or your own start from Lab 03)
+cd projects/snowtooth-api/complete && npm start
+
+# terminal 2 - the UI we build together
+cd projects/snowtooth-ui/start && npm install && npm run dev
 ```
 
 ➡️ **Lab:** [Lab 04 · Add Trails to the UI](../labs/04-client-lab.md)

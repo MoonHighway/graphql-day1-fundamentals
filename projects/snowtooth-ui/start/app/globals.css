@@ -1,0 +1,70 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a2233;
+  background: #f5f8fc;
+}
+
+main {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(20, 40, 80, 0.12);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #e7edf5;
+}
+
+th {
+  background: #eef3fa;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.picker button {
+  border: 1px solid #c9d5e5;
+  background: #fff;
+  padding: 0.25rem 0.6rem;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.picker button.on {
+  color: #fff;
+  border-color: transparent;
+}
+
+.picker button.on.OPEN {
+  background: #2e8540;
+}
+
+.picker button.on.HOLD {
+  background: #c77c14;
+}
+
+.picker button.on.CLOSED {
+  background: #b3352b;
+}
+
+.notice,
+.hint {
+  color: #52627a;
+}

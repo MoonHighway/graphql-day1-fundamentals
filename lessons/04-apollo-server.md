@@ -1,6 +1,6 @@
 # 04 · Apollo Server Basics & Mocking
 
-> ⏱️ ~45 min · project: [`projects/snowtooth-api`](../projects/snowtooth-api)
+> ⏱️ ~45 min · project: [`projects/snowtooth-api/start`](../projects/snowtooth-api/start)
 
 Time to serve a schema. We're using **Apollo Server 5** - the current major version (Node 20+, `graphql` ≥ 16.11).
 
@@ -59,12 +59,12 @@ const server = new ApolloServer({
 });
 ```
 
-Run it:
+Run it - this is exactly what the project's `start/` folder is:
 
 ```bash
-cd projects/snowtooth-api
+cd projects/snowtooth-api/start
 npm install
-npm run mock
+npm start
 ```
 
 Every query in the schema now returns plausible fake data. This is a big workflow unlock: agree on the schema, mock it, and build the client and the real resolvers **in parallel**.
