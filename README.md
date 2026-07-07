@@ -5,7 +5,7 @@ Welcome! We're really glad you're here. This repo holds everything for **Day 1**
 ## Instructor Info
 
 - **Eve Porcello**: [Twitter](https://twitter.com/eveporcello) | [Email](mailto:eve@moonhighway.com)
-- **Moon Highway Training**: [Website](https://www.moonhighway.com) | [Mailing List](http://bit.ly/moonhighway) | [Articles](https://www.moonhighway.com/articles)
+- **Moon Highway Training**: [Website](https://www.moonhighway.com) | [Mailing List](http://bit.ly/moonhighway)
 
 ## 🖥️ Slides
 
