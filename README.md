@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png" width="100" alt="graphql logo"/>
+<img src="https://commons.wikimedia.org/wiki/File:GraphQL_Logo.svg" width="100" alt="graphql logo"/>
 <img src="https://i.imgur.com/migo24P.png" width="100" alt="moon highway logo"/>
 </p>
 
